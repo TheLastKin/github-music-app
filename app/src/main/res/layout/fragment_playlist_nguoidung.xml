@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/DarkTheme">
+    <EditText
+        android:id="@+id/txtTimKiemPlaylist"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:drawableLeft="@drawable/ic_search"
+        android:background="@drawable/searchbar_background"
+        android:layout_marginHorizontal="24dp"
+        android:textSize="20sp"
+        android:textColorHint="#B3B3B3"
+        android:paddingHorizontal="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:drawablePadding="4dp"
+        android:textColor="#EAEAEA"
+        android:layout_alignParentTop="true"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_below="@id/txtTimKiemPlaylist"
+        android:layout_marginTop="12dp"
+        android:visibility="invisible"
+        tools:listitem="@layout/adapter_playlist"
+        android:id="@+id/rvPlaylist"/>
+    <TextView
+        android:id="@+id/txtThongBao"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:text="Có vẻ như bạn chưa có playlist nào..."
+        android:layout_below="@id/txtTimKiemPlaylist"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/white"
+        android:textSize="24sp"/>
+    <Button
+        android:id="@+id/btnTaoPlaylist"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Tạo mới +"
+        android:textColor="@color/white"
+        android:background="@color/emberColor"
+        android:layout_below="@id/txtThongBao"
+        android:layout_marginTop="24dp"
+        android:textSize="22sp"
+        android:textAllCaps="false"/>
+</RelativeLayout>

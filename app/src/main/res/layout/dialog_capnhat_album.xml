@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:cardBackgroundColor="@color/DarkTheme"
+        app:cardCornerRadius="5dp"
+        android:layout_marginBottom="-5dp"
+        android:id="@+id/cvTopheadDialog">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_navigate_before"
+                android:layout_marginLeft="6dp"/>
+            <TextView
+                android:id="@+id/txtThemAlbum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cập Nhật Album"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"/>
+            <ProgressBar
+                android:id="@+id/pbUploadAlbum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="16dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cvTopheadDialog"
+        android:background="@color/white">
+        <EditText
+            android:id="@+id/txtTenAlbum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Tên Album"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtTenNgheSi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTenAlbum"
+            android:layout_marginTop="12dp"
+            android:hint="Tên Nghệ Sĩ"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/ivAnhAlbum"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/txtTenNgheSi"
+            android:src="@drawable/album_default_icon"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"/>
+        <Button
+            android:id="@+id/btnChonAnh"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivAnhAlbum"
+            android:text="Chọn Ảnh"
+            android:textColor="@android:color/white"
+            android:background="@color/DarkTheme"
+            android:layout_below="@id/txtTenNgheSi"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="60dp"/>
+        <TextView
+            android:id="@+id/txtXacNhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xác Nhận"
+            android:textSize="22sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/emberColor"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ivAnhAlbum"
+            android:layout_marginRight="8dp"/>
+    </RelativeLayout>
+</RelativeLayout>

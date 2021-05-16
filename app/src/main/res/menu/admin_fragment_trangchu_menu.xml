@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/txtThemNhac"
+        android:title="Thêm Nhạc"/>
+    <item android:id="@+id/txtThemAlbum"
+        android:title="Thêm Album"/>
+    <item android:id="@+id/txtThemNgheSi"
+        android:title="Thêm Nghệ Sĩ"/>
+    <item android:id="@+id/txtThemChuDe"
+        android:title="Thêm Chủ Đề"/>
+    <item android:id="@+id/txtTimKiem"
+        android:title="Tìm Kiếm"/>
+</menu>

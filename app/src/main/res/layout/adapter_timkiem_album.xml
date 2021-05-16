@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@color/DarkTheme"
+    android:padding="8dp"
+    android:id="@+id/rlTimKiemAlbum">
+
+    <ImageView
+        android:id="@+id/ivAnhAlbum"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/album_default_icon" />
+
+    <TextView
+        android:id="@+id/txtTenAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ivAnhAlbum"
+        android:text="No Name"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtTenNgheSi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTenAlbum"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/ivAnhAlbum"
+        android:text="No performer"
+        android:textColor="@color/textArtistColor"
+        android:textSize="18sp" />
+</RelativeLayout>

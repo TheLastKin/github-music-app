@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#131428"
+    tools:context=".DangKyActivity">
+
+
+    <TextView
+        android:id="@+id/txtRegisterAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:text="Đăng kí tài khoản"
+        android:textColor="#fff"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/txtUserDisplayName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:inputType="text"
+        android:hint="Tên hiển thị"
+        android:textColorHint="@android:color/white"
+        android:layout_below="@id/txtRegisterAccount"
+        android:layout_marginTop="24dp"
+        android:textColor="#fff"/>
+    <EditText
+        android:id="@+id/txtUserEmail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/txtUserDisplayName"
+        android:inputType="text"
+        android:hint="Email"
+        android:textColorHint="@android:color/white"
+        android:textColor="#fff"
+        />
+    <EditText
+        android:id="@+id/txtUserPassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/txtUserEmail"
+        android:inputType="textPassword"
+        android:hint="Mật khẩu"
+        android:textColorHint="@android:color/white"
+        android:textColor="#fff"
+        />
+    <EditText
+        android:id="@+id/txtUserReconfirmPassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/txtUserPassword"
+        android:inputType="textPassword"
+        android:hint="Nhập lại mật khẩu"
+        android:textColorHint="@android:color/white"
+        android:textColor="#fff"
+        />
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtUserReconfirmPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="69dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:textColor="#fff"
+        android:background="@drawable/bubble1"
+        android:text="Đăng kí" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/btnRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/dj" />
+
+
+</RelativeLayout>

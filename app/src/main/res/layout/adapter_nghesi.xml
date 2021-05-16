@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#131428"
+    android:paddingHorizontal="8dp">
+    <ImageView
+        android:id="@+id/ivPhatNhac"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/white_rounded_background"
+        android:src="@drawable/ic_play_arrow_red"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"/>
+    <TextView
+        android:id="@+id/txtTenBaiHat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Bài hát"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/ivPhatNhac"
+        android:layout_marginTop="1dp"/>
+
+    <TextView
+        android:id="@+id/txtTenNgheSi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTenBaiHat"
+        android:text="Nghệ sĩ"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/ivPhatNhac"/>
+
+    <TextView
+        android:id="@+id/txtThoiLuong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="3:00"
+        android:textSize="18sp"
+        android:layout_below="@id/txtTenBaiHat"
+        android:textColor="#fff" />
+
+</RelativeLayout>

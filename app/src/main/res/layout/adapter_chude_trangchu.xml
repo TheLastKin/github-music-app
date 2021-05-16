@@ -1,0 +1,38 @@
+<androidx.cardview.widget.CardView
+    android:layout_width="180dp"
+    android:layout_height="100dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minHeight="150dp"
+    app:cardBackgroundColor="#1c233f"
+    app:cardCornerRadius="16dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivCategoryIcon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/android_hiphop"
+            app:civ_border_overlay="true" />
+        <TextView
+            android:id="@+id/txtTenChuDe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hiphop"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ivCategoryIcon"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"/>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

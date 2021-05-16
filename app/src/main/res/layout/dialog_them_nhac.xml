@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTopheadDialog"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="-5dp"
+        app:cardBackgroundColor="@color/DarkTheme"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="6dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_navigate_before" />
+
+            <TextView
+                android:id="@+id/txtThemNhac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Thêm Nhạc"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <ProgressBar
+                android:id="@+id/pbUploadNhac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="16dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/txtTenNhac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cvTopheadDialog"
+        android:layout_marginTop="16dp"
+        android:hint="Tên Nhạc"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtTenNgheSi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTenNhac"
+        android:layout_marginTop="12dp"
+        android:hint="Tên Nghệ Sĩ"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="20sp" />
+    <Spinner
+        android:id="@+id/spnTheLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTenNgheSi"
+        android:layout_marginTop="8dp"/>
+    <EditText
+        android:id="@+id/txtTenFile"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spnTheLoai"
+        android:layout_marginTop="12dp"
+        android:hint="Tên file"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:focusable="false"
+        android:cursorVisible="true"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/btnChonAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chọn File"
+        android:theme="@style/dialogButton"
+        android:background="@color/DarkTheme"
+        android:layout_toRightOf="@id/txtTenFile"
+        android:layout_below="@id/spnTheLoai"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="8dp"/>
+    <TextView
+        android:id="@+id/txtXacNhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xác Nhận"
+        android:textSize="22sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/emberColor"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtTenFile"
+        android:layout_marginRight="8dp"/>
+</RelativeLayout>

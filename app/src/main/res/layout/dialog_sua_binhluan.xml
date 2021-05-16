@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:cardBackgroundColor="@color/DarkTheme"
+        app:cardCornerRadius="5dp"
+        android:layout_marginBottom="-5dp"
+        android:id="@+id/cvTopheadDialog">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent">
+            <ImageView
+                android:id="@+id/ivCloseDialog"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_navigate_before"
+                android:layout_marginLeft="6dp"
+                android:onClick="closeDialog"/>
+            <TextView
+                android:id="@+id/txtThemVaSuaAlbum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sưa Bình Luận"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:layout_below="@id/cvTopheadDialog"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/txtBinhLuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="12dp"
+            android:lines="3"
+            android:hint="Nhập Bình Luận"
+            android:gravity="top"
+            android:textColor="@android:color/black"
+            android:maxLines="4"/>
+        <TextView
+            android:id="@+id/txtXacNhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xác Nhận"
+            android:textSize="22sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/emberColor"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtBinhLuan"
+            android:layout_marginRight="8dp"/>
+    </RelativeLayout>
+</RelativeLayout>

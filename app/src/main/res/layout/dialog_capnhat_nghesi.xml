@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:cardBackgroundColor="@color/DarkTheme"
+        app:cardCornerRadius="5dp"
+        android:layout_marginBottom="-5dp"
+        android:id="@+id/cvTopheadDialog">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_navigate_before"
+                android:layout_marginLeft="6dp"/>
+            <TextView
+                android:id="@+id/txtThemNgheSi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cập Nhật Nghệ Sĩ"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"/>
+            <ProgressBar
+                android:id="@+id/pbUploadNgheSi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="16dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:layout_below="@id/cvTopheadDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <EditText
+            android:id="@+id/txtTenNgheSi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Tên Nghệ Sĩ"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtNgaySinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTenNgheSi"
+            android:layout_marginTop="12dp"
+            android:hint="Ngày Sinh"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/ivAnhNgheSi"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/txtNgaySinh"
+            android:src="@drawable/artist_default_icon"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"/>
+        <Button
+            android:id="@+id/btnChonAnh"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivAnhNgheSi"
+            android:text="Chọn Ảnh"
+            android:textColor="@android:color/white"
+            android:background="@color/DarkTheme"
+            android:layout_below="@id/txtNgaySinh"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="60dp"/>
+        <EditText
+            android:id="@+id/txtThongTinThem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivAnhNgheSi"
+            android:layout_marginTop="12dp"
+            android:lines="4"
+            android:inputType="textMultiLine"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:hint="Thông Tin Thêm"
+            android:textColorHint="@android:color/black"
+            android:gravity="top"/>
+        <TextView
+            android:id="@+id/txtXacNhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xác Nhận"
+            android:textSize="22sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/emberColor"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtThongTinThem"
+            android:layout_marginRight="8dp"/>
+    </RelativeLayout>
+</RelativeLayout>

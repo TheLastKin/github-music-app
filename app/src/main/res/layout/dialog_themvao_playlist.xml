@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTopheadDialog"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:cardBackgroundColor="@color/DarkTheme"
+        app:cardCornerRadius="5dp"
+        android:layout_marginBottom="-5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/ivCloseDialog"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_navigate_before"
+                android:layout_marginLeft="6dp"/>
+            <TextView
+                android:id="@+id/txtThemVaSuaTheLoai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thêm Vào Playlist"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <Spinner
+        android:id="@+id/spnDanhSachPlaylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cvTopheadDialog"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/txtXacNhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xác Nhận"
+        android:textSize="22sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/emberColor"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/spnDanhSachPlaylist"
+        android:layout_marginRight="8dp"/>
+</RelativeLayout>

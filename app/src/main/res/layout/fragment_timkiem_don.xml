@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/DarkTheme">
+    <EditText
+        android:id="@+id/txtTimKiem"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:drawableLeft="@drawable/ic_search"
+        android:background="@drawable/searchbar_background"
+        android:layout_marginHorizontal="24dp"
+        android:textSize="20sp"
+        android:hint="Tên nhạc..."
+        android:textColorHint="#B3B3B3"
+        android:maxLines="1"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:paddingHorizontal="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:drawablePadding="4dp"
+        android:textColor="#EAEAEA"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvXemThem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/adapter_timkiem_nhac"
+        android:layout_below="@id/txtTimKiem"
+        android:layout_marginBottom="50dp"/>
+</RelativeLayout>

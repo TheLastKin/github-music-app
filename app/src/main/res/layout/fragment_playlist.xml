@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/DarkTheme">
+    <EditText
+        android:id="@+id/txtTimKiemPlaylist"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:drawableLeft="@drawable/ic_search"
+        android:background="@drawable/searchbar_background"
+        android:layout_marginHorizontal="24dp"
+        android:textSize="20sp"
+        android:textColorHint="#B3B3B3"
+        android:paddingHorizontal="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:drawablePadding="4dp"
+        android:textColor="#EAEAEA"
+        android:layout_alignParentTop="true"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_below="@id/txtTimKiemPlaylist"
+        android:layout_marginTop="12dp"
+        tools:listitem="@layout/adapter_playlist"
+        android:id="@+id/rvPlaylist"/>
+</RelativeLayout>

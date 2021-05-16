@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/DarkTheme"
+    android:paddingHorizontal="8dp"
+    android:paddingTop="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/txtTimKiem"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:drawableLeft="@drawable/ic_search"
+            android:background="@drawable/searchbar_background"
+            android:layout_marginHorizontal="24dp"
+            android:textSize="20sp"
+            android:hint="Tên nhạc, nghệ sĩ..."
+            android:textColorHint="#B3B3B3"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:paddingHorizontal="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:drawablePadding="4dp"
+            android:textColor="#EAEAEA"/>
+        <TextView
+            android:id="@+id/txtBaiHat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:text="Bài Hát"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/txtTimKiem"/>
+        <TextView
+            android:id="@+id/txtXemThemNhac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:text="Xem Thêm"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txtTimKiem"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTimKiemNhac"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_below="@id/txtBaiHat"
+            tools:listitem="@layout/adapter_timkiem_nhac"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtNgheSi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rvTimKiemNhac"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:text="Nghệ Sĩ"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtXemThemNgheSi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:text="Xem Thêm"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="14dp"
+            android:layout_below="@id/rvTimKiemNhac"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTimKiemNgheSi"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/txtNgheSi"
+            tools:listitem="@layout/adapter_timkiem_nghesi"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtAlbums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rvTimKiemNgheSi"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:text="Albums"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"/>
+        <TextView
+            android:id="@+id/txtXemThemAlbum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:text="Xem Thêm"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="14dp"
+            android:layout_below="@id/rvTimKiemNgheSi"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTimKiemAlbums"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            tools:listitem="@layout/adapter_timkiem_album"
+            android:layout_below="@id/txtAlbums"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="50dp"/>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

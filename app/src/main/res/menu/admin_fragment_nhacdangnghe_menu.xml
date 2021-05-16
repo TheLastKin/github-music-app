@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/txtThemVaoPlaylist"
+        android:title="Thêm Vào Playlist"/>
+    <item android:id="@+id/txtThemVaoAlbum"
+        android:title="Thêm Vào Album"/>
+    <item android:id="@+id/txtCapNhat"
+        android:title="Cập Nhật"/>
+    <item android:id="@+id/txtXoa"
+        android:title="Xóa"/>
+</menu>

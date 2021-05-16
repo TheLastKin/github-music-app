@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/DarkTheme">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+      <EditText
+          android:id="@+id/txtTimKiemAlbums"
+          android:layout_width="match_parent"
+          android:layout_height="35dp"
+          android:drawableLeft="@drawable/ic_search"
+          android:background="@drawable/searchbar_background"
+          android:layout_marginHorizontal="24dp"
+          android:textSize="20sp"
+          android:hint="Tên album, nghệ sĩ..."
+          android:textColorHint="#B3B3B3"
+          android:maxLines="1"
+          android:inputType="text"
+          android:imeOptions="actionDone"
+          android:paddingHorizontal="12dp"
+          android:layout_marginTop="12dp"
+          android:layout_marginBottom="12dp"
+          android:drawablePadding="4dp"
+          android:textColor="#EAEAEA"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTimKiemAlbums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"
+            android:layout_below="@id/txtTimKiemAlbums"
+            tools:listitem="@layout/adapter_album"
+            android:layout_marginBottom="50dp"/>
+    </RelativeLayout>
+</RelativeLayout>

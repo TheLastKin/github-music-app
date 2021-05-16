@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DarkTheme"
+    tools:context=".LoginActivity">
+
+  <TextView
+      android:id="@+id/txtLogin"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:text="Đăng Nhập"
+      android:textColor="#fff"
+      android:textStyle="bold"
+      android:layout_marginTop="80dp"
+      android:textSize="30dp" />
+
+  <EditText
+      android:id="@+id/txtUserEmail"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@id/txtLogin"
+      android:layout_marginHorizontal="62dp"
+      android:layout_marginTop="24dp"
+      android:inputType="textEmailAddress"
+      android:hint="Email"
+      android:textColorHint="@android:color/white"
+      android:textColor="#fff"/>
+
+  <EditText
+      android:id="@+id/txtPassword"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/txtUserEmail"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="24dp"
+      android:layout_marginHorizontal="62dp"
+      android:inputType="textPassword"
+      android:hint="Password"
+      android:textColorHint="@android:color/white"
+      android:textColor="#fff" />
+  <CheckBox
+      android:id="@+id/chkRemember"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Nhớ tài khoản?"
+      android:textSize="18sp"
+      android:textColor="@android:color/white"
+      android:buttonTint="@android:color/white"
+      android:layout_below="@id/txtPassword"
+      android:layout_centerHorizontal="true"
+      android:layout_toLeftOf="@id/btnGoogleLogin"
+      android:layout_marginTop="8dp"
+      />
+
+  <Button
+      android:id="@+id/btnLogin"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/chkRemember"
+      android:layout_marginHorizontal="40dp"
+      android:layout_marginTop="16dp"
+      android:textColor="#fff"
+      android:background="@drawable/bubble"
+      android:text="Đăng nhập" />
+
+  <TextView
+      android:id="@+id/txtForgotPassword"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@android:color/white"
+      android:text="Quên mật khẩu"
+      android:textSize="18sp"
+      android:layout_marginTop="12dp"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@id/btnLogin"/>
+  <TextView
+      android:id="@+id/txtRegisterNow"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#FFC107"
+      android:text="Chưa có tài khoản? Hãy tạo một cái"
+      android:layout_marginTop="12dp"
+      android:textSize="18sp"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@id/txtForgotPassword"/>
+
+
+  <Button
+      android:id="@+id/btnFacebookLogin"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@id/txtRegisterNow"
+      android:layout_toLeftOf="@id/txtOr"
+      android:layout_marginRight="8dp"
+      android:background="@drawable/facebook" />
+
+
+  <Button
+      android:id="@+id/btnGoogleLogin"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:layout_toRightOf="@id/txtOr"
+      android:layout_centerHorizontal="true"
+      android:layout_marginLeft="8dp"
+      android:layout_below="@id/txtRegisterNow"
+      android:background="@drawable/google" />
+
+  <TextView
+      android:id="@+id/txtOr"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:text="or"
+      android:textSize="18sp"
+      android:layout_marginTop="12dp"
+      android:layout_below="@id/txtRegisterNow"
+      android:textColor="#ffff" />
+
+  <ImageView
+      android:layout_width="250dp"
+      android:layout_height="250dp"
+      android:layout_below="@+id/txtOr"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="16dp"
+      android:background="@drawable/dj" />
+
+
+</RelativeLayout>

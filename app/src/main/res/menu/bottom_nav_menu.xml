@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:id="@+id/bottomNavSchedule"
+            android:title="Lịch Học"
+            android:icon="@drawable/ic_home"/>
+        <item android:id="@+id/bottomNavCourses"
+            android:title="Khóa Học"
+            android:icon="@drawable/ic_home"/>
+        <item android:id="@+id/bottomNavSignUpCourse"
+            android:title="Đăng Ký Khóa"
+            android:icon="@drawable/ic_home"/>
+    </group>
+</menu>

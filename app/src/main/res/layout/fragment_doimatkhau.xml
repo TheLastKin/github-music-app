@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DarkTheme">
+
+    <TextView
+        android:id="@+id/txtDoiMatKhau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Đổi Mật Khẩu"
+        android:textColor="#fff"
+        android:textSize="30dp" />
+    <EditText
+        android:id="@+id/txtMatKhauCu"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/txtDoiMatKhau"
+        android:inputType="text"
+        android:textSize="18sp"
+        android:hint="Mật khẩu cũ"
+        android:backgroundTint="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textColor="#fff"
+        />
+    <EditText
+        android:id="@+id/txtMatKhauMoi"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/txtMatKhauCu"
+        android:textSize="18sp"
+        android:inputType="textPassword"
+        android:hint="Mật khẩu"
+        android:backgroundTint="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textColor="#fff"
+        />
+    <EditText
+        android:id="@+id/txtNhapLaiMatKhauMoi"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/txtMatKhauMoi"
+        android:textSize="18sp"
+        android:inputType="textPassword"
+        android:hint="Nhập lại mật khẩu"
+        android:backgroundTint="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textColor="#fff"
+        />
+    <Button
+        android:id="@+id/btnDoiMatKhau"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNhapLaiMatKhauMoi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:textColor="#fff"
+        android:background="@drawable/bubble1"
+        android:text="Xác Nhận"
+        android:textSize="24sp"
+        android:textAllCaps="false"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/btnDoiMatKhau"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dj" />
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuenMatKhauActivity"
+    android:background="@color/DarkTheme">
+    <TextView
+        android:id="@+id/txtLayLaiMatKhau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Lấy Lại Mật Khẩu"
+        android:textSize="28sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="76dp"
+        android:textStyle="bold"/>
+    <ImageView
+        android:id="@+id/ivLockOpen"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_lock_open"
+        android:layout_below="@id/txtLayLaiMatKhau"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/txtThongBao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chúng tôi sẽ giúp bạn lấy lại \nmật khẩu"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_below="@id/ivLockOpen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:lineHeight="28dp"
+        android:textAlignment="center"/>
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/txtThongBao"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:textColorHint="@android:color/white"
+        android:textColor="#fff"
+        android:backgroundTint="@android:color/white" />
+    <Button
+        android:id="@+id/btnLayLaiMatKhau"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textColor="#fff"
+        android:background="@drawable/bubble1"
+        android:text="Xác Nhận"
+        android:textSize="24sp"
+        android:textAllCaps="false"/>
+    <ImageView
+        android:layout_width="284dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/btnLayLaiMatKhau"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dj" />
+</RelativeLayout>

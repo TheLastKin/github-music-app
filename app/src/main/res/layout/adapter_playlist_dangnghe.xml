@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlPlaylistDangNghe"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:layout_marginBottom="8dp"
+    android:background="@color/DarkTheme"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/txtTenNhac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="No Name"
+        android:layout_toLeftOf="@id/txtThoiLuong"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtTenNgheSi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTenNhac"
+        android:layout_marginTop="8dp"
+        android:text="No performer"
+        android:layout_toLeftOf="@id/txtThoiLuong"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/textArtistColor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtThoiLuong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ivDivider"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:text="0:00"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/ivDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dividerColor" />
+</RelativeLayout>

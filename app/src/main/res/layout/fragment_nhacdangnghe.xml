@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsvNhacDangNghe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:behavior_hideable="true"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/DarkTheme">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vpNhacDangNghe"
+                android:layout_width="match_parent"
+                android:layout_height="480dp"
+                android:layout_alignParentTop="true" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tbNhacDangNgheTrangChinh"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentTop="true"
+                app:contentInsetStart="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivAnCuaSo"
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_keyboard_arrow_down" />
+
+                    <TextView
+                        android:id="@+id/txtTuaDeTrang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Nhạc Đang Nghe"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:translationX="-12dp" />
+
+                    <ImageView
+                        android:id="@+id/ivThemVaoPlaylist"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_add" />
+
+                    <ImageView
+                        android:id="@+id/ivThich"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@id/ivThemVaoPlaylist"
+                        android:src="@drawable/heart_icon" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <SeekBar
+                android:id="@+id/sbNhacDangNghe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vpNhacDangNghe"
+                android:layout_marginTop="30dp"
+                android:progressBackgroundTint="@android:color/white"
+                android:progressTint="@color/emberColor"
+                android:thumb="@drawable/seekbar_thumb_control" />
+
+            <TextView
+                android:id="@+id/txtThoiGianHienTai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sbNhacDangNghe"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="0:00"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtThoiLuongBaiHat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sbNhacDangNghe"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="5:00"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/ivXaoTron"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/sbNhacDangNghe"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_shuffle"
+                android:translationX="-30dp" />
+
+            <ImageView
+                android:id="@+id/ivLapLai"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/sbNhacDangNghe"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_repeat"
+                android:translationX="30dp" />
+
+            <ImageView
+                android:id="@+id/ivTroLaiTruoc"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/ivXaoTron"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="24dp"
+                android:layout_toLeftOf="@id/ivChayVaDung"
+                android:background="@drawable/white_rounded_background"
+                android:src="@drawable/ic_skip_previous_red" />
+
+            <ImageView
+                android:id="@+id/ivChayVaDung"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_below="@id/ivXaoTron"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/white_rounded_background"
+                android:clickable="false"
+                android:src="@drawable/ic_pause_red" />
+
+            <ImageView
+                android:id="@+id/ivSangKeTiep"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/ivXaoTron"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/ivChayVaDung"
+                android:background="@drawable/white_rounded_background"
+                android:src="@drawable/ic_skip_next_red" />
+
+            <TextView
+                android:id="@+id/txtBinhLuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivChayVaDung"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="16dp"
+                android:text="0 Bình Luận"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/txtLuotThich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivChayVaDung"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="12dp"
+                android:text="0 Lượt Thích"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/txtNhapBinhLuan"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/txtBinhLuan"
+                android:layout_marginHorizontal="6dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/comment_input_background"
+                android:gravity="top"
+                android:hint="Hãy chia sẻ cảm nghĩ của bạn!"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:maxLines="10"
+                android:paddingLeft="12dp"
+                android:paddingTop="4dp"
+                android:scrollbars="vertical"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/textArtistColor" />
+
+            <Button
+                android:id="@+id/btnDangBinhLuan"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/txtNhapBinhLuan"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/emberColor"
+                android:text="Đăng"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvBinhLuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnDangBinhLuan"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="80dp"
+                tools:listitem="@layout/adapter_binhluan" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
